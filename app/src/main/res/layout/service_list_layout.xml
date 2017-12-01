@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="@integer/mainwindowsum"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="@integer/mainwindowsum2"
+        android:layout_weight="@integer/mainsum">
+
+        <TextView
+            android:id="@+id/service_field"
+            android:layout_weight="@integer/mainsum2"
+            android:layout_width="0dp"
+            android:text="@string/service"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/textsizeheaderitem"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:layout_weight="1.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="0dp"
+            android:text="Dashboard"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/mainsum3"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_gravity="center|right"
+            android:id="@+id/homeactivity"
+            android:layout_weight="1"
+            android:src="@drawable/homeicon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroundsearch"
+        android:visibility="visible"
+        android:weightSum="@integer/mainsum4"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/search_click2"
+            android:visibility="gone"
+
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:weightSum="10"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"/>
+            <EditText
+                android:hint="Type Search"
+                android:layout_width="0dp"
+                android:textSize="15sp"
+                android:layout_weight="8.7"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/search_iconaction"
+                android:layout_height="30dp"
+                android:src="@drawable/searchblack"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/search_click1"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:id="@+id/searchimage"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:src="@drawable/searchblack"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_height="20dp"
+                android:text="Search"
+                android:textColor="@android:color/black"
+                android:id="@+id/textViewsearch" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:visibility="visible"
+                android:id="@+id/searchitems"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="10sp"
+                android:hint="Search"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_weight=".1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_data">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="@integer/windowsumitem6"
+        android:orientation="horizontal"
+        android:background="@color/dashboardbottom"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5.2">
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/servicetext"
+                android:layout_height="match_parent"
+                android:text="@string/service_item"
+                android:layout_weight="1"
+                android:textSize="@dimen/textsize1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+            <TextView
+                android:id="@+id/robottext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/RobotSpecs_item"
+                android:layout_weight="1"
+                android:textSize="@dimen/textsize1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/equipmenttext"
+                android:layout_height="match_parent"
+                android:text="@string/EquipmentList_iten"
+                android:layout_weight="1.1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/textsize1"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/JobSite_items"
+                android:layout_weight="1"
+                android:textSize="@dimen/textsize1"
+                android:id="@+id/jobtext"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"/>
+    </LinearLayout>
+</LinearLayout>

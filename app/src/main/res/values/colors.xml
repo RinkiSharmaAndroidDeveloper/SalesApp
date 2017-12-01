@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dashboardbottom">#252525</color>
+    <color name="white">#FFFFFF</color>
+    <color name="clickfont">#D0CDCD</color>
+    <color name="backgroundsearch">#6d7475</color>
+    <color name="grey">#cccccc</color>
+    <color name="bluetext">#0f7afd</color>
+</resources>

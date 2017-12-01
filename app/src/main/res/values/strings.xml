@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SalesApp</string>
+    <string name="service">Services</string>
+    <string name="RobotSpecs">Robot Specs</string>
+    <string name="EquipmentList">Equipment List</string>
+    <string name="JobSite">Job Site Videos</string>
+    <string name="service_item">Services</string>
+    <string name="RobotSpecs_item">Robots</string>
+    <string name="EquipmentList_iten">Equipment</string>
+    <string name="JobSite_items">Jobs</string>
+    <string name="dummytest"></string>
+
+</resources>
